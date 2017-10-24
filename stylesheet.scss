@@ -11,7 +11,7 @@ $color2: #e8f380;
 
 body {
   color: $color;
-  background: white;
+  background-color:  #f2f2f2;
   font-family: "Cardo", serif;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
@@ -32,10 +32,11 @@ a:hover {
 
 }
 
-.headerborder {
-  border: 10px;
-  border-color: white;
+.opacity {
+  opacity: .3;
 }
+
+
 
 h1 {
   font-size: 30px;
@@ -95,61 +96,36 @@ p {
   }
 }
 
-.mouse {
-  display: block;
-  margin: 0 auto;
-  width: 26px;
-  height: 46px;
-  border-radius: 13px;
-  border: 2px solid $color2;
-  bottom: 40px;
-  position: absolute;
-  left: 50%;
-  margin-left: -14px;
-  span {
-    display: block;
-    margin: 6px auto;
-    width: 2px;
-    height: 2px;
-    border-radius: 4px;
-    background: $color2;
-    border: 1px solid transparent;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-name: scroll;
-    animation-name: scroll;
-  }
-}
 
-@-webkit-keyframes scroll {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-    transform: translateY(20px);
-  }
+.parallax {
+    /* The image used */
+    background-image: url('http://supernatural.buzz/wp-content/uploads/2015/09/binary-code-pattern.png');
+
+    /* Full height */
+    min-height: 100px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
-@keyframes scroll {
-  0% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 0;
-    -webkit-transform: translateY(20px);
-    -ms-transform: translateY(20px);
-    transform: translateY(20px);
-  }
+.text {
+  background-color: #333;
+  color: white;
+    padding: 80px;
+     overflow: hidden;
+    white-space: nowrap;
+}
+
+.projecttitle {
+  text-align: left;
+}
+
+.subheading {
+  text-align: left;
+  color: #ff80aa;
+  font-size: 20px;
 }
